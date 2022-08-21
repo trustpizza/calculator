@@ -3,44 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <sripts src="scripts.js" defer></sripts>
         <title> Calculator </title>
     </head>
     <body>
         <div id="container">
-            <div class="calculator">
-                <div class="display">Display</div>
-                <div class="clearDeleteSection"> 
-                    <button class="clear clearDeleteButtons button">Clear</button>
-                    <button class="delete clearDeleteButtons button">Delete</button>
+            <div id="CALC">
+                <div class="display"></div>
+                <div class="buttons">
+                    <div class="clearDelete">
+                        <button class="btn clear">Clear</button>
+                        <button class="btn delete">Delete</button>
+                    </div>
+                    <div class="btnGrid">
+                        <div class="col">
+                            <button class="btn inGrid">1</button>
+                            <button class="btn inGrid">4</button>
+                            <button class="btn inGrid">7</button>
+                            <button class="btn inGrid">0</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn inGrid">2</button>
+                            <button class="btn inGrid">5</button>
+                            <button class="btn inGrid">8</button>
+                            <button class="btn inGrid">.</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn inGrid">3</button>
+                            <button class="btn inGrid">6</button>
+                            <button class="btn inGrid">9</button>
+                            <button class="btn inGrid">=</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn inGrid">/</button>
+                            <button class="btn inGrid">*</button>
+                            <button class="btn inGrid">+</button>
+                            <button class="btn inGrid">-</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="numpad">
-                    <div class="col">
-                        <button class="num button"> 1</button>
-                        <button class="num button"> 4</button>
-                        <button class="num button"> 7</button>
-                        <button class="num button"> 0</button>
-                    </div> 
-                    <div class="col">
-                        <button class="num button"> 2</button>
-                        <button class="num button"> 5</button>
-                        <button class="num button"> 8</button>
-                        <button class="num button"> .</button>
-                    </div> 
-                    <div class="col">
-                        <button class="num button"> 3</button>              
-                        <button class="num button"> 6</button>
-                        <button class="num button"> 9</button>
-                        <button class="num equal button"> =</button>
-                    </div>
-                    <div class="col">
-                        <button class="num operator button"> ÷</button>              
-                        <button class="num operator button"> x</button>
-                        <button class="num operator button"> +</button>
-                        <button class="num operator button"> -</button>
-                    </div>
             </div>
         </div>
-        </div>
-        <sripts src="scripts.js"></sripts>
     </body> 
 </html>
